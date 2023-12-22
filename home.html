@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="styles.css/home.css">
+   <link rel="stylesheet" href="styles.css/slider.css">
+   <link rel="stylesheet" href="images/jsfiles/toggle.js">
+   <link rel="stylesheet" href="images/jsfiles/slider.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">DARUL HIKMAH</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">post</a></li>
+                <li><a href="#">read</a></li>
+                <li><a href="#">courses <b>▼</b></a>
+                  <ul>
+                    <li><a href="#">for Women</a></li>
+                    <li><a href="#">for kids</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">publications<b>▼</b></a>
+                    <ul>
+                        <li><a href="#">Ebooks</a></li>
+                        <li><a href="#">by academy</a></li>
+                        
+                    </ul>
+                </li>
+               
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <script>let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active')
+        }</script>
+
+
+                                       <!-- sliderrrrrrrrrrrrrr -->    
+         
+     <div class="slider">
+        <div class="myslider fade" style="display: block;">
+            <div class="txt">
+                <h1>IMAGE</h1>
+                <p>KRISH<br>Lorem ipsum dolor sit, amet consectetur adipisicing <br>elit. Soluta temporibus cupiditate sequi ut atque 
+                    explicabo consectetur provident omnis  ipsa? Temporib.</p>
+            </div>
+            <img src="images/model1.jpg" alt="image not foumd" style="width: 100%; height: 100%;" ;>
+        </div>
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>IMAGE2</h1>
+                <p>KRISH<br>Lorem ipsum dolor sit, amet. Soluta <br>sequi ut atque 
+                   Ratione, quis. Voluptas ipsa excepturi labore repellat deserunt quasi.</p>
+            </div>
+            <img src="images/model2.jpg" alt="image not foumd" style="width: 100%; height: 100%;" ;>
+        </div>
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>IMAGE3</h1>
+                <p>KRISH<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus cupiditate sequi ut atque 
+                    explicabo consectetur provident omnis  ipsa? Temporibus, reprehenderit? Ratione, quis. Voluptas ipsa excepturi 
+                    labore repellat deserunt quasi.</p>
+            </div>
+            <img src="images/model3.jpg" alt="image not foumd" style="width: 100%; height: 100%;" ;>
+        </div>
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>IMAGE4</h1>
+                <p>KRISH<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus cupiditate sequi ut atque 
+                    explicabo consectetur provident omnis  ipsa? Temporibus, reprehenderit? Ratione, quis. Voluptas ipsa excepturi 
+                    labore repellat deserunt quasi.</p>
+            </div>
+            <img src="images/model4.jpg" alt="image not foumd" style="width: 100%; height: 100%;" ;>
+        </div>
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>IMAGE5</h1>
+                <p>KRISH<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta temporibus cupiditate sequi ut atque 
+                    explicabo consectetur provident omnis  ipsa? Temporibus, reprehenderit? Ratione, quis. Voluptas ipsa excepturi 
+                    labore repellat deserunt quasi.</p>
+            </div>
+            <img src="images/model1.jpg" alt="image not foumd" style="width: 100%; height: 100%;" ;>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="dotsbox" style="text-align: center;">
+              <span class="dot" onclick="currentSlide(1)"></span>
+             <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+             <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+     </div>
+                                  
+     <script src="jsfiles/slider.js" defer></script>            
+    
+    </body>
+</html>
