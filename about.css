@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    margin-top: 3rem;
+    color: #5c504b;
+    font-weight: 800;
+}
+.slog{
+    margin-top: 2rem;
+    text-align: center;
+    color: #607eaa;
+}
+div.abtcon1 , div.abtcont2{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #887859;
+    font-weight:500 ;
+}
+div.par1 ,div.par3{
+ width: 700px;
+}
+.logob img{
+    width: 15rem;
+    align-self: center;
+    justify-self: center;
+}
+div.par3{
+    justify-self: center;
+    align-self: center;
+}
+.par2 h3{
+    text-align: center;
+    color: #604c44;
+}
+.par2 li{
+    margin-top: 0.5rem;
+}
