@@ -13,6 +13,7 @@
 header{
   z-index: 9999;
     position: absolute;
+    position: fixed;
     width: 100%;
     min-height: 66px;
     background-color: #1C3879;

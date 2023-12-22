@@ -3,8 +3,8 @@
 <head>
    <link rel="stylesheet" href="styles.css/home.css">
    <link rel="stylesheet" href="styles.css/slider.css">
-   <link rel="stylesheet" href="jsfiles/toggle.js">
-   <link rel="stylesheet" href="jsfiles/slider.js">
+   <link rel="stylesheet" href="images/jsfiles/toggle.js">
+   <link rel="stylesheet" href="images/jsfiles/slider.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Darul Hikmah</a>
+        <a href="#" class="logo">DARUL HIKMAH</a>
         <div class="menuToggle"></div>
         <nav>
             <ul>
@@ -99,57 +99,11 @@
              <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
-             <span class="dot" onclick="currentSlide(4)"></span>
+             <span class="dot" onclick="currentSlide(5)"></span>
           </div>
      </div>
-    <script src="jsfiles/slider.js"></script>                                   
-                   
-    <script>
-        const myslide = document.query.querySelectorAll('.myslider'),
-dot = document.querySelectorAll('.dot');
-
-let counter = 1;
-slidefun(counter);
-
-let timer = setInterval(autoslide,800);
-function autoslide() {
-    counter += 1;
-    slidefun(counter);
-}
-function plusslides(n) {
-    counter += n;
-    slidefun(counter);
-    resetTimer();
-}
-function currentslide(n){
-    counter= n;
-    slidefun(counter);
-    resetTimer();
-}
-function resetTimer(){
-    clearInterval(timer);
-    timer = setInterval(autoslide,8000);
-}
-
-
-function slidefun(n){
-    let i;
-    for(i = 0;i<myslide.length;i++){
-        myslide[i].style.display = "none"
-    }
-    for(i=0;i<dot.length;i++){
-        dot[i].classList.remove('active')
-    }
-    if(n> myslide.length){
-        counter = 1;
-    }
-    if (n<1){
-        counter = myslide.length;
-    }
-    myslide[counter - 1].style.display = "block";
-    dot[counter - 1].classList.add('active')
-
-}
-    </script>
+                                  
+     <script src="jsfiles/slider.js" defer></script>            
+    
     </body>
 </html>

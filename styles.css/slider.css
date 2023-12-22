@@ -6,7 +6,7 @@
     
 }
 .myslider{
-    height: 100%;
+    height: 100vh;
     display: none;
     overflow: hidden;
    
@@ -52,9 +52,9 @@
 
 .fade{
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 10s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 10s;
 }
 @-webkit-keyframes fade{
     from {opacity: 0.8;}
@@ -95,9 +95,9 @@
 img{
     transform: scale(1.5,1.5);
     -webkit-animation-name: zoomin;
-    -webkit-animation-duration: 40s;
+    -webkit-animation-duration: 10s;
     animation-name: zoomin;
-    animation-duration: 40s;
+    animation-duration: 10s;
 }
 @-webkit-keyframes zoomin {
     from {transform: scale(1,1);}

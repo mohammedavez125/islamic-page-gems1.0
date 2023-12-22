@@ -1,4 +1,4 @@
-const myslide = document.query.querySelectorAll('.myslider'),
+const myslide = document.querySelectorAll('.myslider'),
 dot = document.querySelectorAll('.dot');
 
 let counter = 1;
@@ -31,7 +31,7 @@ function slidefun(n){
         myslide[i].style.display = "none"
     }
     for(i=0;i<dot.length;i++){
-        dot[i].classList.remove('active')
+        dot[i].classList.remove('active');
     }
     if(n> myslide.length){
         counter = 1;
@@ -40,6 +40,6 @@ function slidefun(n){
         counter = myslide.length;
     }
     myslide[counter - 1].style.display = "block";
-    dot[counter - 1].classList.add('active')
+    dot[counter - 1].classList.add('active');
 
 }
